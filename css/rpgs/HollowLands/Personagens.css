@@ -1,0 +1,152 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: -19px;
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(/fonts/Lexend/LexendDeca-Medium.ttf);
+}
+
+@font-face {
+    font-family: LexendBold;
+    src: url(/fonts/Lexend/LexendDeca-Bold.ttf);
+}
+
+header {
+    margin: 0%;
+    margin-bottom: -20px;
+    padding: 0%;
+    height: 450px;
+    background-image: url('/image/RPGS/HollowLands.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header nav {
+    position: fixed;
+    background: linear-gradient(180deg, #8a8989 0%, rgba(252, 252, 252, 0.56) 100%);
+    background-color: gray;
+    margin-top: -19px;
+    padding: 0%;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+header nav ul.opa {
+    list-style: none;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+header nav img {
+    position: relative;
+    width: 200px;
+    top: 60px;
+    margin-top: -36px;
+}
+
+header nav ul.opa li {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: -1px;
+    text-transform: uppercase;
+    bottom: -3px;
+    padding-bottom: 15px;
+}
+
+header nav ul.opa li a {
+    text-decoration: none;
+    color: black;
+    font-family: LexendBold;
+    font-size: 36px;
+    padding: 2px; /* Lembrete, isso evita que quando acontece o hover, os textos não se movam  */
+}
+
+header nav ul.opa li a:hover{
+    border-radius: 5px;
+    padding: 1px 2px 1px 2px;
+    background-color: grey;
+    background: rgba(250, 250, 250, 0.205)
+}
+
+section.Personagens {
+    display: block;
+    font-family: Lexend;
+    background: linear-gradient(180deg, rgba(252, 252, 252, 0.56) 0%, #8a8989 100%);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+figcaption.Titulo {
+    font-family: LexendBold;
+    color: rgb(87, 87, 87);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+figcaption.Basico h1 {
+    font-family: Lexend;
+    color: black;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+figcaption.Basico h2 {
+    font-family: Lexend;
+    color: black;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+em {
+    font-family: Lexend;
+    color: rgba(121, 121, 121, 0.808);
+    font-size: 24px;
+}
+
+em.Bold {
+    font-family: LexendBold;
+    color: black;
+}
+
+img.Foto {
+    width:  300px; /* Lembrar: Com esses valores, faz o grupo de imagens ser do mesmo tamanho idependente do tamanho dela */
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 10px;
+    margin-bottom: -20px;
+}
+
+img.Foto.longa {
+    height: 500px;
+}
+
+/* Logo */
+@media screen and (min-width: 350px) and  (max-width: 970px) {
+    
+    header nav a img {
+        width: 0px;
+    }
+    
+}
+
+@media screen and (min-width: 350px) and  (max-width: 420px) {
+ 
+    header nav ul.opa li {
+        margin-right: 15px;
+        padding-bottom: 10px;
+    }
+
+    header {
+        height: 550px;
+    }
+
+}
