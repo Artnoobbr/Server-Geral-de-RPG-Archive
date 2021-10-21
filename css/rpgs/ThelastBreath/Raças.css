@@ -10,8 +10,19 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+}
+
 #header {
-    background: rgb(179, 19, 19);
+    background: linear-gradient(180deg, #03A83E 0%, rgba(18, 220, 0, 0.66) 100%);
+    background-color: rgb(5, 214, 5);
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -28,6 +39,7 @@ body {
 #menu {
     float: right;
     color: black;
+    font-family: PoppinsBold;
 }
 
 #menu li {
@@ -58,7 +70,7 @@ body {
     line-height: 60px; 
 }
 
-a:hover {
+a.nav:hover {
     transition: .3s;
     border-radius: 5px;
     padding: 1px 2px 1px 2px;
@@ -70,38 +82,51 @@ a:hover {
     display: none;
 }
 
-#HomePage {
-    display: flex;
-    background-image: url(/image/Fundo.jpg);
+#imagem {
+    height: 450px;
     background-size: cover;
     background-position: center;
+    background-image: url(/image/RPGS/TheLastBreath/Raças/Raças.png);
+}
+
+section.Personagens {
+    display: block;
+    font-family: Poppins;
     text-align: center;
-    height: 800px;
 }
 
-#HomePage div {
-    color: black;
-    display: inline-block;
-    margin: auto;
+figcaption.Titulo {
+    font-family: PoppinsBold;
+    color: rgb(0, 175, 15);
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+figcaption.Basico h1 {
+    font-family: Poppins;
+    color: rgb(109, 109, 109);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+em {
+    font-family: Poppins;
+    color: rgba(121, 121, 121, 0.808);
+    font-size: 24px;
+}
+
+img.Foto {
+    width:  300px; /* Lembrar: Com esses valores, faz o grupo de imagens ser do mesmo tamanho idependente do tamanho dela */
     height: 350px;
-    margin-top: 100px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 10px;
+    margin-bottom: -20px;
+    margin-bottom: 10px;
 }
 
-#HomePage div h1 {
-    font-size: 100px;
-    
-}
-
-#HomePage div h2 {
-    color: #b9b9b9;
-    font-size: 50px;
-}
-
-h2 {
-    margin-top: 20px;
-}
-
-@media (max-width: 715px){
+@media (max-width: 850px){
 	.checkbtn {
 		display: block;
 	}
@@ -110,7 +135,8 @@ h2 {
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		background: rgb(143, 13, 13);
+        background: linear-gradient(180deg, #03A83E 0%, rgba(18, 220, 0, 0.66) 100%);
+        background-color: rgb(5, 214, 5);
 		top: 64px;
 		left: -100%;
 		text-align: center;
@@ -134,17 +160,4 @@ h2 {
 	#check:checked ~ ul {
 		left: 0;
 	}
-
-    #HomePage div h1 {
-        font-size: 45px;
-    }
-    
-    #HomePage div h2 {
-        color: #b9b9b9;
-        font-size: 35px;
-    }
-
 }
-
-
-
