@@ -11,18 +11,17 @@ body {
 }
 
 @font-face {
-    font-family: Poppins;
-    src: url(/fonts/Poppins/Poppins-Medium.ttf);
+    font-family: Quicksand;
+    src: url(/fonts/Quicksand/Quicksand-Medium.ttf);
 }
 
 @font-face {
-    font-family: PoppinsBold;
-    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+    font-family: QuicksandBold;
+    src: url(/fonts/Quicksand/Quicksand-Bold.ttf);
 }
 
 #header {
-    background: linear-gradient(180deg, #03A83E 0%, rgba(18, 220, 0, 0.66) 100%);
-    background-color: rgb(5, 214, 5);
+    background-color: #5670A1ff;
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -39,7 +38,7 @@ body {
 #menu {
     float: right;
     color: black;
-    font-family: PoppinsBold;
+    font-family: QuicksandBold;
 }
 
 #menu li {
@@ -86,24 +85,34 @@ a.nav:hover {
     height: 450px;
     background-size: cover;
     background-position: center;
-    background-image: url(/image/RPGS/TheLastBreath.png);
+    background-image: url(/image/RPGS/AshesofRevenge.png);
 }
 
 #Sobre {
-    font-family: Poppins;
+    font-family: Quicksand;
+    background: white;
+    background-position: center;
+    padding-bottom: 5px;
     text-align: center;
 }
 
+
 h1.Title {
-    color: rgb(0, 175, 15);
+    color: #5670A1ff;
     font-size: 40px;
     margin-bottom: 15px;
     padding: 10px;
 }
 
 h1.Texto {
-    font-size: x-large;
+    font-size: 25px;
     margin-bottom: 10px;
+    color: #1E2027ff;
+}
+
+em.Arquivo {
+    font-family: Quicksand;
+    color: grey;
 }
 
 @media (max-width: 850px){
@@ -115,8 +124,7 @@ h1.Texto {
 		position: fixed;
 		width: 100%;
 		height: 100%;
-        background: linear-gradient(180deg, #03A83E 0%, rgba(18, 220, 0, 0.66) 100%);
-        background-color: rgb(5, 214, 5);
+        background: rgb(68, 90, 129);
 		top: 64px;
 		left: -100%;
 		text-align: center;
